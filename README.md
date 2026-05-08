@@ -1,2 +1,2 @@
-l188.online
+loto188.com
 
