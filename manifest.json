@@ -1,0 +1,10 @@
+{
+  "name": "loto188.com",
+  "short_name": "loto188",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071a2e",
+  "theme_color": "#071a2e",
+  "description": "Trang thể thao đang được chuẩn bị trên domain loto188.com",
+  "icons": []
+}
