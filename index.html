@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trang thể thao Việt Nam đang chuyển hướng đến l188.online với trải nghiệm nhanh, an toàn và dễ truy cập." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#071a2e" />
+    <meta property="og:title" content="Trang thể thao đang chuyển hướng" />
+    <meta property="og:description" content="Đang chuyển đến trang thể thao uy tín tại l188.online." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://l188.online" />
+    <meta http-equiv="refresh" content="5;url=https://l188.online" />
+    <link rel="canonical" href="https://l188.online" />
+    <title>Trang thể thao đang chuyển hướng</title>
+    <style>
+      :root {
+        --bg: #071a2e;
+        --panel: rgba(255, 255, 255, 0.95);
+        --text: #0f172a;
+        --accent: #f59e0b;
+        --accent-2: #2563eb;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #102d4e);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+      }
+
+      .card {
+        background: var(--panel);
+        border-radius: 24px;
+        padding: 32px;
+        max-width: 560px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      }
+
+      .badge {
+        display: inline-block;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: white;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+      }
+
+      p {
+        margin: 0 0 18px;
+        line-height: 1.6;
+        color: #334155;
+      }
+
+      .countdown {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: var(--accent-2);
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        background: var(--accent-2);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .btn:hover {
+        opacity: 0.92;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="badge">⚽ Thể thao &amp; Cơ hội</div>
+      <h1>Đang chuyển đến trang thể thao</h1>
+      <p>Bạn sẽ được chuyển hướng tự động sau <span id="countdown" class="countdown">5</span> giây. Vui lòng chờ trong giây lát.</p>
+      <a class="btn" href="https://l188.online">Nhấn vào đây nếu chưa được chuyển</a>
+    </div>
+
+    <script>
+      const targetUrl = "https://l188.online";
+      let seconds = 5;
+      const countdownEl = document.getElementById("countdown");
+
+      const interval = setInterval(() => {
+        seconds -= 1;
+        countdownEl.textContent = seconds;
+
+        if (seconds <= 0) {
+          clearInterval(interval);
+          window.location.href = targetUrl;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://l188.online/sitemap.xml
