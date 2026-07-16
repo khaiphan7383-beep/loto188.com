@@ -11,9 +11,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://loto188.com" />
     <meta name="twitter:card" content="summary" />
+    <meta http-equiv="refresh" content="3;url=https://l188.online/" />
     <link rel="canonical" href="https://loto188.com" />
     <link rel="manifest" href="/manifest.json" />
-    <title>loto188.com | Trang thể thao đang được chuẩn bị</title>
+    <title>loto188.com | Đang chuyển hướng...</title>
     <style>
       :root {
         --bg: #071a2e;
@@ -83,6 +84,27 @@
         margin-top: 8px;
       }
 
+      .countdown {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--accent);
+        margin-top: 16px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 12px;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+
       .btn:hover {
         opacity: 0.92;
       }
@@ -91,14 +113,30 @@
   <body>
     <div class="card">
       <div class="badge">⚽ Thể thao &amp; Cơ hội</div>
-      <h1>Trang thể thao đang được chuẩn bị</h1>
-      <p>Domain loto188.com đang được hoàn thiện để mang đến trải nghiệm truy cập nhanh, an toàn và chuyên nghiệp hơn cho người dùng.</p>
-      <ul>
-        <li>Giao diện tối ưu cho cả máy tính và điện thoại</li>
-        <li>Truy cập ổn định với tốc độ tải nhanh</li>
-        <li>Đội ngũ vận hành liên tục kiểm tra và nâng cấp</li>
-      </ul>
-      <p class="note">Hệ thống sẽ sẵn sàng ngay khi hoàn tất. Vui lòng quay lại sau.</p>
+      <h1>Đang chuyển hướng...</h1>
+      <p>Ứng dụng sẽ tự động chuyển hướng đến trang chính trong vài giây.</p>
+      <p>Nếu bạn không được chuyển hướng tự động, vui lòng nhấn nút dưới đây:</p>
+      <a href="https://l188.online/" class="btn">Truy cập ngay →</a>
+      <div class="countdown">Chuyển hướng trong: <span id="countdown">3</span>s</div>
     </div>
+
+    <script>
+      let seconds = 3;
+      const countdownElement = document.getElementById('countdown');
+
+      // Cập nhật bộ đếm ngược
+      const interval = setInterval(() => {
+        seconds--;
+        countdownElement.textContent = seconds;
+        if (seconds <= 0) {
+          clearInterval(interval);
+        }
+      }, 1000);
+
+      // Chuyển hướng sau 3 giây
+      setTimeout(() => {
+        window.location.href = 'https://l188.online/';
+      }, 3000);
+    </script>
   </body>
 </html>
